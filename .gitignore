@@ -1,0 +1,85 @@
+# .NET
+bin/
+obj/
+
+# Visual Studio 2022 specific
+.vs/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Package management
+packages/
+!packages/**/*.md
+
+# NuGet
+*.nupkg
+project.lock.json
+project.assets.json
+nuget.config
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+*.cache
+*.ilk
+*.obj
+*.o
+*.idb
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.lib
+*.a
+*.exp
+*.iobj
+*.ipdb
+*.tlog
+*.log
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Rider
+.idea/
+*.iml
+
+# Visual Studio Code
+.vscode/
+
+# LocalDB
+*.mdf
+*.ldf
+
+# Entity Framework
+*.edmx.diagram
+
+# ASP.NET
+appsettings*.json
+secrets.json
+
+# Azure
+*.azureactivitylog.json
+
+# IIS
+IISExpress/
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+
+# Linux
+*~
