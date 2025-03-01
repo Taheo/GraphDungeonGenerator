@@ -23,8 +23,9 @@ namespace GraphDungeonGenerator
             return graph;
         }
 
-        public AdjacencyGraph<int, Edge<int>> GenerateRandomGraphWithOneEntrance(AdjacencyGraph<int, Edge<int>> graphToRandomize)
+        public AdjacencyGraph<int, Edge<int>> GenerateRandomGraphWithOneEntrance(int vertices)
         {
+            var graphToRandomize = GenerateSimpleGraph(vertices);
             var graph = new AdjacencyGraph<int, Edge<int>>();
             var firstVertex = graphToRandomize.Vertices.First();
             var random = new Random();

@@ -1,4 +1,5 @@
-﻿using DungeonAPI.Models;
+﻿using DungeonAPI.Enums;
+using DungeonAPI.Models;
 using DungeonAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,9 +17,9 @@ namespace DungeonAPI.Controllers
         }
 
         [HttpGet]
-        public ActionResult<Dungeon> GetSimpleDungeon(int verticies)
+        public ActionResult<Dungeon> GetSimpleDungeon(int verticies, GraphGenerationMethod method)
         {
-            var dungeon = _dungeonService.GenerateDungeon(verticies);
+            var dungeon = _dungeonService.GenerateDungeon(verticies, method);
             if (dungeon == null)
             {
                 return NotFound();

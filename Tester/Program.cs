@@ -6,7 +6,7 @@ internal class Program
     {
         var engine = new GraphDungeonGenerator.Engine();
         var simpleGraph = engine.GenerateSimpleGraph(10);
-        var randomGraph = engine.GenerateRandomGraphWithOneEntrance(simpleGraph);
+        var randomGraph = engine.GenerateRandomGraphWithOneEntrance(10);
         DisplayGraph(randomGraph);
     }
 
