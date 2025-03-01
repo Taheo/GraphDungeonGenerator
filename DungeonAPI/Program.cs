@@ -9,6 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IDungeonService, DungeonService>();
+builder.Services.AddScoped<ITitleService, TitleService>();
 builder.Services.AddScoped<GraphDungeonGenerator.Engine>();
 
 var app = builder.Build();
