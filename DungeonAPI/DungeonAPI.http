@@ -1,0 +1,6 @@
+@DungeonAPI_HostAddress = http://localhost:5213
+
+GET {{DungeonAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
